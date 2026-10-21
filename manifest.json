@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Zeta tok/s",
+  "version": "1.0.0",
+  "description": "Show generation speed on zeta-ai.io replies",
+  "content_scripts": [
+    {
+      "matches": ["https://zeta-ai.io/*"],
+      "js": ["tps.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
